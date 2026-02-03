@@ -6,10 +6,10 @@ import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { label: 'Benefits', href: '#benefits' },
-  { label: 'Capabilities', href: '#capabilities' },
-  { label: 'FAQ', href: '#faq' },
-  { label: 'Apply', href: '#apply' },
+  { label: 'AI Acceleration', href: '/expertise/ai-acceleration' },
+  { label: 'Revenue Systems', href: '/expertise/revenue-systems' },
+  { label: 'Dominance', href: '/expertise/digital-dominance' },
+  { label: 'Apply', href: '/#apply' },
 ]
 
 export function Header() {
