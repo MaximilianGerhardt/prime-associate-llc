@@ -4,19 +4,26 @@ import { ArrowRight, Crown, Globe, Flame, Eye } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
-  title: 'Digital Market Dominance | Category Leadership Strategy',
-  description: 'Second place is first loser. We engineer category dominance, not market share. Prime Associates builds monopolies in the attention economy.',
+  title: 'Digital Market Dominance | Category Creation & Leadership Strategy',
+  description: 'Prime Associates LLC engineers category dominance, not market share. Our digital dominance strategy includes: Category of One positioning, global-scale systems, controlled aggression marketing, and omnipresence architecture. We help ventures seeking $500K-$10M+ create monopolies in the attention economy. Second place is first loser.',
   keywords: [
     'Digital Market Dominance',
-    'Category Leadership',
+    'Category Leadership Strategy',
+    'Category Creation',
     'Market Monopoly Strategy',
     'Brand Dominance',
-    'Digital Authority',
+    'Digital Authority Building',
     'Market Leader Strategy',
+    'Attention Economy',
+    'Omnipresence Marketing',
+    'Category King Strategy',
   ],
+  alternates: {
+    canonical: '/expertise/digital-dominance',
+  },
   openGraph: {
     title: 'Digital Market Dominance | Prime Associates LLC',
-    description: 'Second place is first loser. We engineer category dominance, not market share.',
+    description: 'Category creation, not market share. We engineer monopolies in the attention economy.',
     type: 'website',
   },
 }

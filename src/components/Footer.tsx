@@ -32,6 +32,12 @@ export function Footer() {
               Capabilities
             </Link>
             <Link 
+              href="/newsletter" 
+              className="text-sm text-muted hover:text-foreground transition-colors"
+            >
+              Newsletter
+            </Link>
+            <Link 
               href="#apply" 
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
@@ -52,7 +58,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-muted/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted">
-          <p>© {new Date().getFullYear()} Prime Associate LLC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Prime Associates LLC. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <Link href="/privacy" className="hover:text-foreground transition-colors">
               Privacy Policy

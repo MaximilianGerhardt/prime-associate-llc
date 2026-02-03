@@ -4,19 +4,26 @@ import { ArrowRight, DollarSign, Repeat, Shield, Clock } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
-  title: 'Autonomous Revenue Systems | Algorithmic Sales Infrastructure',
-  description: 'Manual sales is dead. We build self-scaling revenue machines that work 24/7 without human bottlenecks. Your competitors are still making cold calls.',
+  title: 'Autonomous Revenue Systems | 24/7 Algorithmic Sales Infrastructure',
+  description: 'Prime Associates LLC builds self-scaling revenue machines that work 24/7 without human bottlenecks. Our autonomous revenue systems feature: revenue on autopilot, self-optimizing algorithms, recession-proof execution, and 10x time compression. We partner with ventures seeking $500K-$10M+ investment to build algorithmic sales infrastructure that never sleeps.',
   keywords: [
     'Autonomous Revenue Systems',
-    'Algorithmic Sales',
+    'Algorithmic Sales Infrastructure',
     'Automated Revenue Generation',
-    'Sales Automation',
+    'Sales Automation Systems',
     'Revenue Infrastructure',
     'Scalable Sales Systems',
+    '24/7 Sales Automation',
+    'Self-Optimizing Sales',
+    'AI Sales Systems',
+    'Revenue Machine Building',
   ],
+  alternates: {
+    canonical: '/expertise/revenue-systems',
+  },
   openGraph: {
     title: 'Autonomous Revenue Systems | Prime Associates LLC',
-    description: 'Manual sales is dead. We build self-scaling revenue machines that work 24/7.',
+    description: 'Self-scaling revenue machines that work 24/7. Algorithmic precision. Zero human bottlenecks.',
     type: 'website',
   },
 }

@@ -1,8 +1,8 @@
 export const siteConfig = {
   name: 'Prime Associates LLC',
   description: 'The world\'s most exclusive investment business accelerator for the digital age. Global AI Business Accelerator, Tier-1 Digital Investment Catalyst, AI-Driven Revenue Scaling.',
-  url: 'https://primeassociate.com',
-  ogImage: 'https://primeassociate.com/og.jpg',
+  url: 'https://p-a.llc',
+  ogImage: 'https://p-a.llc/og-image.png',
   links: {
     linkedin: 'https://linkedin.com/company/primeassociate',
   },
@@ -42,7 +42,7 @@ export function generateOrganizationSchema() {
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Business Development',
-      email: 'inquiries@primeassociate.com',
+      email: 'info@p-a.llc',
     },
   }
 }
@@ -122,7 +122,7 @@ export function generateFAQSchema() {
         name: 'What is Prime Associates LLC?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Prime Associates LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
+          text: 'Prime Associates LLC is a global AI business accelerator and investment catalyst headquartered in Estero, Florida (EIN: 41-3650497). We specialize in three core areas: AI Business Acceleration, Autonomous Revenue Systems, and Digital Market Dominance. We partner with ventures seeking $500K to $10M+ in investment acceleration, providing capital, AI infrastructure, and direct execution support.',
         },
       },
       {
@@ -130,7 +130,7 @@ export function generateFAQSchema() {
         name: 'What types of businesses does Prime Associates work with?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We exclusively partner with high-end AI ventures, digital businesses with proven scalability, and entrepreneurs who understand that time is the ultimate currency. We do not work with early-stage concepts or businesses that require extensive validation.',
+          text: 'We exclusively partner with: (1) High-end AI ventures with proven technology, (2) Digital businesses demonstrating scalability with $500K+ annual revenue, (3) Entrepreneurs seeking rapid 10x growth through AI automation. We do not work with early-stage concepts, businesses requiring extensive validation, or ventures below our minimum investment threshold of $500,000.',
         },
       },
       {
@@ -138,7 +138,7 @@ export function generateFAQSchema() {
         name: 'What is the Nexus Framework?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The Nexus Framework is our proprietary stability bedrock—a systematic approach that provides immovable foundation for rapid scaling. It ensures that acceleration does not compromise structural integrity.',
+          text: 'The Nexus Framework is Prime Associates\' proprietary methodology for business acceleration. It consists of three phases: (1) Foundation - establishing stable operational infrastructure, (2) Acceleration - deploying AI systems for revenue generation, (3) Dominance - scaling to category leadership.',
         },
       },
       {
@@ -146,7 +146,7 @@ export function generateFAQSchema() {
         name: 'What investment range does Prime Associates consider?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We operate exclusively in high-ticket engagements. Minimum partnership thresholds start at $500,000. This is non-negotiable and by design—it ensures alignment with partners who are serious about exponential growth.',
+          text: 'Prime Associates operates in high-ticket investment ranges: Minimum $500,000, typical range $1M-$5M, maximum $10M+. Investment includes capital injection plus AI infrastructure deployment, execution team support, and access to our partner network.',
         },
       },
       {
@@ -154,7 +154,7 @@ export function generateFAQSchema() {
         name: 'How does the qualification process work?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our qualification process is rigorous and by invitation. Submit your inquiry through our form. If there is alignment, our team will reach out within 48 hours. Not every submission proceeds—this selectivity is what ensures results.',
+          text: 'Our qualification process has four stages: (1) Application submission via our online form, (2) Initial review within 48 hours, (3) Strategy call with our investment team, (4) Due diligence and partnership agreement. Approval rate is approximately 8% of applications.',
         },
       },
       {
@@ -162,7 +162,23 @@ export function generateFAQSchema() {
         name: 'What makes Prime Associates different from traditional VCs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We are not a traditional VC. We are a catalyst. Traditional VCs provide capital and wait. We provide capital, infrastructure, AI systems, and direct execution support. Every second of engagement multiplies enterprise revenue.',
+          text: 'Prime Associates differs from traditional VCs in four key ways: (1) We provide execution, not just capital—our team actively builds and deploys AI systems, (2) We deliver results in 90 days, not years, (3) We focus exclusively on AI-driven revenue acceleration, (4) We maintain a hands-on partnership model.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Where is Prime Associates located?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Prime Associates LLC is headquartered at 23160 Fashion Dr Ste 220, Estero, FL 33928, United States. We operate globally with partners across North America, Europe, and Asia-Pacific regions. Contact us at info@p-a.llc for partnership inquiries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What results can partners expect from Prime Associates?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our portfolio companies typically achieve: 3-5x revenue growth within 12 months, 65% reduction in operational costs through AI automation, 24/7 autonomous revenue generation capability, and category leadership positioning in their market.',
         },
       },
     ],

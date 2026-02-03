@@ -7,27 +7,35 @@ import { cn } from '@/lib/utils'
 const faqs = [
   {
     question: 'What is Prime Associates LLC?',
-    answer: 'Prime Associates LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
+    answer: 'Prime Associates LLC is a global AI business accelerator and investment catalyst headquartered in Estero, Florida (EIN: 41-3650497). We specialize in three core areas: AI Business Acceleration, Autonomous Revenue Systems, and Digital Market Dominance. We partner with ventures seeking $500K to $10M+ in investment acceleration, providing capital, AI infrastructure, and direct execution support.',
   },
   {
     question: 'What types of businesses does Prime Associates work with?',
-    answer: 'We exclusively partner with high-end AI ventures, digital businesses with proven scalability, and entrepreneurs who understand that time is the ultimate currency. We do not work with early-stage concepts or businesses that require extensive validation.',
+    answer: 'We exclusively partner with: (1) High-end AI ventures with proven technology, (2) Digital businesses demonstrating scalability with $500K+ annual revenue, (3) Entrepreneurs seeking rapid 10x growth through AI automation. We do not work with early-stage concepts, businesses requiring extensive validation, or ventures below our minimum investment threshold of $500,000.',
   },
   {
     question: 'What is the Nexus Framework?',
-    answer: 'The Nexus Framework is our proprietary stability bedrock—a systematic approach that provides immovable foundation for rapid scaling. It ensures that acceleration does not compromise structural integrity.',
+    answer: 'The Nexus Framework is Prime Associates\' proprietary methodology for business acceleration. It consists of three phases: (1) Foundation - establishing stable operational infrastructure, (2) Acceleration - deploying AI systems for revenue generation, (3) Dominance - scaling to category leadership. This systematic approach ensures rapid growth without compromising structural integrity.',
   },
   {
     question: 'What investment range does Prime Associates consider?',
-    answer: 'We operate exclusively in high-ticket engagements. Minimum partnership thresholds start at $500,000. This is non-negotiable and by design—it ensures alignment with partners who are serious about exponential growth.',
+    answer: 'Prime Associates operates in high-ticket investment ranges: Minimum $500,000, typical range $1M-$5M, maximum $10M+. Investment includes capital injection plus AI infrastructure deployment, execution team support, and access to our partner network. This threshold ensures alignment with partners serious about exponential growth.',
   },
   {
     question: 'How does the qualification process work?',
-    answer: 'Our qualification process is rigorous and by invitation. Submit your inquiry through our form. If there is alignment, our team will reach out within 48 hours. Not every submission proceeds—this selectivity is what ensures results.',
+    answer: 'Our qualification process has four stages: (1) Application submission via our online form, (2) Initial review within 48 hours, (3) Strategy call with our investment team, (4) Due diligence and partnership agreement. Approval rate is approximately 8% of applications—this selectivity ensures exceptional results for accepted partners.',
   },
   {
     question: 'What makes Prime Associates different from traditional VCs?',
-    answer: 'We are not a traditional VC. We are a catalyst. Traditional VCs provide capital and wait. We provide capital, infrastructure, AI systems, and direct execution support. Every second of engagement multiplies enterprise revenue.',
+    answer: 'Prime Associates differs from traditional VCs in four key ways: (1) We provide execution, not just capital—our team actively builds and deploys AI systems, (2) We deliver results in 90 days, not years, (3) We focus exclusively on AI-driven revenue acceleration, (4) We maintain a hands-on partnership model with direct access to our expertise and infrastructure.',
+  },
+  {
+    question: 'Where is Prime Associates located?',
+    answer: 'Prime Associates LLC is headquartered at 23160 Fashion Dr Ste 220, Estero, FL 33928, United States. We operate globally with partners across North America, Europe, and Asia-Pacific regions. Contact us at info@p-a.llc for partnership inquiries.',
+  },
+  {
+    question: 'What results can partners expect from Prime Associates?',
+    answer: 'Our portfolio companies typically achieve: 3-5x revenue growth within 12 months, 65% reduction in operational costs through AI automation, 24/7 autonomous revenue generation capability, and category leadership positioning in their market. Results vary based on business model and market conditions.',
   },
 ]
 

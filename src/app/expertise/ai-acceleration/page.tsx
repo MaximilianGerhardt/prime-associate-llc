@@ -4,8 +4,8 @@ import { ArrowRight, Zap, Brain, TrendingUp, Target } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 
 export const metadata: Metadata = {
-  title: 'AI Business Acceleration | Enterprise AI Integration',
-  description: 'We don\'t consult. We execute. Prime Associates deploys battle-tested AI systems that generate revenue from day one. No pilots. No experiments. Only results.',
+  title: 'AI Business Acceleration | Enterprise AI Systems That Generate Revenue Day One',
+  description: 'Prime Associates LLC deploys battle-tested AI systems that generate revenue from day one. Our AI acceleration services include autonomous revenue systems, instant deployment (days not quarters), compound growth engines, and precision targeting. We partner with ventures seeking $500K-$10M+ to transform their business with AI. No pilots. No experiments. Only results.',
   keywords: [
     'AI Business Acceleration',
     'Enterprise AI Integration',
@@ -13,10 +13,17 @@ export const metadata: Metadata = {
     'Autonomous Sales AI',
     'AI-Driven Growth',
     'Machine Learning Revenue',
+    'AI Implementation Services',
+    'AI Business Transformation',
+    'Revenue Generating AI',
+    'AI Systems Deployment',
   ],
+  alternates: {
+    canonical: '/expertise/ai-acceleration',
+  },
   openGraph: {
     title: 'AI Business Acceleration | Prime Associates LLC',
-    description: 'We don\'t consult. We execute. Battle-tested AI systems that generate revenue from day one.',
+    description: 'Battle-tested AI systems that generate revenue from day one. Autonomous systems, instant deployment, compound growth.',
     type: 'website',
   },
 }

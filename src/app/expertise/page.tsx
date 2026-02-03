@@ -3,19 +3,26 @@ import Link from 'next/link'
 import { ArrowRight, Brain, DollarSign, Crown } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Our Expertise | AI, Revenue Systems & Market Dominance',
-  description: 'Prime Associates delivers three core capabilities: AI Business Acceleration, Autonomous Revenue Systems, and Digital Market Dominance. We don\'t advise. We execute.',
+  title: 'Our Expertise | AI Business Acceleration, Revenue Systems & Market Dominance',
+  description: 'Prime Associates LLC delivers three core capabilities that transform businesses: AI Business Acceleration for day-one ROI, Autonomous Revenue Systems operating 24/7, and Digital Market Dominance strategies that create category kings. We partner with ventures seeking $500K-$10M+ investment acceleration.',
   keywords: [
-    'AI Business Expertise',
-    'Revenue System Experts',
-    'Digital Dominance Consulting',
+    'AI Business Acceleration',
+    'Autonomous Revenue Systems',
+    'Digital Market Dominance',
     'Business Acceleration Services',
-    'AI Integration Experts',
-    'Sales Automation Experts',
+    'AI Integration Consulting',
+    'Sales Automation Systems',
+    'Investment Acceleration',
+    'AI Venture Capital',
+    'Revenue Scaling Experts',
+    'Category Creation Strategy',
   ],
+  alternates: {
+    canonical: '/expertise',
+  },
   openGraph: {
     title: 'Our Expertise | Prime Associates LLC',
-    description: 'AI Business Acceleration, Autonomous Revenue Systems, and Digital Market Dominance.',
+    description: 'AI Business Acceleration, Autonomous Revenue Systems, and Digital Market Dominance. Three pillars that compound into unstoppable growth.',
     type: 'website',
   },
 }

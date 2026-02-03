@@ -1,14 +1,28 @@
 import { Metadata } from 'next'
+import { generateBreadcrumbSchema } from '@/lib/seo'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for Prime Associates LLC - Terms governing use of our website and services.',
+  description: 'Terms of Service for Prime Associates LLC - Legal terms and conditions governing use of our website, services, and investment acceleration programs.',
+  alternates: {
+    canonical: '/terms',
+  },
 }
 
 export default function TermsPage() {
+  const breadcrumbSchema = generateBreadcrumbSchema([
+    { name: 'Home', url: 'https://p-a.llc' },
+    { name: 'Terms of Service', url: 'https://p-a.llc/terms' },
+  ])
+
   return (
-    <div className="min-h-screen py-32 px-6 md:px-12 lg:px-24">
-      <div className="max-w-3xl mx-auto">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
+      <div className="min-h-screen py-32 px-6 md:px-12 lg:px-24">
+        <div className="max-w-3xl mx-auto">
         <h1 className="font-serif text-4xl md:text-5xl text-foreground mb-8">Terms of Service</h1>
         <p className="text-muted mb-12">Last updated: {new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}</p>
         
@@ -82,11 +96,29 @@ export default function TermsPage() {
               23160 Fashion Dr Ste 220<br />
               Estero, FL 33928<br />
               United States<br /><br />
-              Email: legal@primeassociate.com
+              Email: legal@p-a.llc
             </address>
           </section>
+          <section>
+            <h2 className="text-xl text-foreground mb-4">Disclaimer of Warranties</h2>
+            <p>
+              Our services are provided "as is" without any warranties, express or implied. 
+              We do not guarantee any specific business results, revenue increases, or investment returns. 
+              Past performance of our portfolio companies does not guarantee future results.
+            </p>
+          </section>
+
+          <section>
+            <h2 className="text-xl text-foreground mb-4">Confidentiality</h2>
+            <p>
+              Any information shared during the application process or partnership discussions 
+              is considered confidential. Both parties agree to maintain the confidentiality of 
+              proprietary business information, strategies, and financial details.
+            </p>
+          </section>
+        </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
