@@ -24,9 +24,9 @@ export const metadata: Metadata = {
   },
   description: siteConfig.description,
   keywords: siteConfig.keywords,
-  authors: [{ name: 'Prime Associate LLC' }],
-  creator: 'Prime Associate LLC',
-  publisher: 'Prime Associate LLC',
+  authors: [{ name: 'Prime Associates LLC' }],
+  creator: 'Prime Associates LLC',
+  publisher: 'Prime Associates LLC',
   robots: {
     index: true,
     follow: true,

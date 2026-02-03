@@ -322,7 +322,7 @@ export default function AdminDashboard() {
           <div className="flex items-center gap-8">
             <div>
               <h1 className="font-serif text-2xl text-[#FAFAFA]">CRM Dashboard</h1>
-              <p className="text-[#666] text-sm">Prime Associate Lead Management</p>
+              <p className="text-[#666] text-sm">Prime Associates Lead Management</p>
             </div>
             
             <div className="hidden lg:flex items-center gap-4 ml-8">

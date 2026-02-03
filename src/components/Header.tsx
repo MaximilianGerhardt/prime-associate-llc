@@ -33,7 +33,7 @@ export function Header() {
     >
       <nav className="flex items-center justify-between px-6 md:px-12 lg:px-24 py-6">
         <Link href="/" className="font-serif text-xl text-foreground">
-          Prime <span className="text-accent">Associate</span>
+          Prime <span className="text-accent">Associates</span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

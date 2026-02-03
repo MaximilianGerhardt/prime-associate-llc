@@ -12,7 +12,7 @@ const emailFooter = `
       <tr>
         <td style="vertical-align: top;">
           <p style="color: #C9A962; font-size: 16px; margin: 0 0 8px 0; font-family: Georgia, serif;">
-            Prime <span style="color: #C9A962;">Associate</span> <span style="color: #666; font-size: 12px;">LLC</span>
+            Prime <span style="color: #C9A962;">Associates</span> <span style="color: #666; font-size: 12px;">LLC</span>
           </p>
           <p style="color: #666; font-size: 11px; margin: 0; line-height: 1.6;">
             23160 Fashion Dr Ste 220<br />
@@ -29,7 +29,7 @@ const emailFooter = `
     </table>
     <p style="color: #444; font-size: 10px; margin-top: 16px; text-align: center;">
       This is a transactional email regarding your inquiry submission.<br />
-      © ${new Date().getFullYear()} Prime Associate LLC. All rights reserved.
+      © ${new Date().getFullYear()} Prime Associates LLC. All rights reserved.
     </p>
   </div>
 `
@@ -58,7 +58,7 @@ export async function sendAdminNotification(data: {
   }
 
   return resend.emails.send({
-    from: 'Prime Associate <notifications@mail.p-a.llc>',
+    from: 'Prime Associates <notifications@mail.p-a.llc>',
     to: [ADMIN_EMAIL],
     subject: `🔔 New Application: ${data.name} | ${data.company || 'Individual'} | ${data.investmentRange || 'Not specified'}`,
     html: `
@@ -174,15 +174,15 @@ export async function sendCustomerConfirmation(data: {
   }
 
   return resend.emails.send({
-    from: 'Prime Associate <hello@mail.p-a.llc>',
+    from: 'Prime Associates <hello@mail.p-a.llc>',
     to: [data.email],
     replyTo: ADMIN_EMAIL,
-    subject: 'Application Received - Prime Associate LLC',
+    subject: 'Application Received - Prime Associates LLC',
     html: `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 600px; margin: 0 auto; background: #0A0A0A; color: #FAFAFA; padding: 40px;">
         <div style="text-align: center; margin-bottom: 40px;">
           <h1 style="color: #FAFAFA; font-size: 32px; margin: 0; font-family: Georgia, serif;">
-            Prime <span style="color: #C9A962;">Associate</span>
+            Prime <span style="color: #C9A962;">Associates</span>
           </h1>
           <p style="color: #666; font-size: 12px; margin-top: 8px; letter-spacing: 2px;">GLOBAL AI BUSINESS ACCELERATOR</p>
         </div>
@@ -193,7 +193,7 @@ export async function sendCustomerConfirmation(data: {
           </p>
           
           <p style="color: #CCCCCC; line-height: 1.8; margin: 0 0 16px 0;">
-            Thank you for your interest in Prime Associate LLC. We have successfully received your application.
+            Thank you for your interest in Prime Associates LLC. We have successfully received your application.
           </p>
 
           <div style="background: #0A0A0A; border-left: 3px solid #C9A962; padding: 16px 20px; margin: 24px 0;">

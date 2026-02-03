@@ -8,7 +8,7 @@ export function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div>
             <Link href="/" className="font-serif text-xl text-foreground">
-              Prime <span className="text-accent">Associate</span> <span className="text-muted/60 text-sm">LLC</span>
+              Prime <span className="text-accent">Associates</span> <span className="text-muted/60 text-sm">LLC</span>
             </Link>
             <p className="text-muted text-xs mt-2">
               23160 Fashion Dr Ste 220, Estero, FL 33928

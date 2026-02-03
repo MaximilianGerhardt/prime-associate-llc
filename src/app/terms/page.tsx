@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Terms of Service',
-  description: 'Terms of Service for Prime Associate LLC - Terms governing use of our website and services.',
+  description: 'Terms of Service for Prime Associates LLC - Terms governing use of our website and services.',
 }
 
 export default function TermsPage() {
@@ -24,7 +24,7 @@ export default function TermsPage() {
           <section>
             <h2 className="text-xl text-foreground mb-4">Services</h2>
             <p>
-              Prime Associate LLC provides investment acceleration services on a selective basis. 
+              Prime Associates LLC provides investment acceleration services on a selective basis. 
               Submission of an inquiry does not guarantee acceptance or partnership. 
               All partnerships are subject to qualification and mutual agreement.
             </p>
@@ -34,14 +34,14 @@ export default function TermsPage() {
             <h2 className="text-xl text-foreground mb-4">Intellectual Property</h2>
             <p>
               All content on this website, including text, graphics, logos, and software, 
-              is the property of Prime Associate LLC and protected by intellectual property laws.
+              is the property of Prime Associates LLC and protected by intellectual property laws.
             </p>
           </section>
 
           <section>
             <h2 className="text-xl text-foreground mb-4">Limitation of Liability</h2>
             <p>
-              Prime Associate LLC shall not be liable for any indirect, incidental, special, 
+              Prime Associates LLC shall not be liable for any indirect, incidental, special, 
               or consequential damages arising from your use of this website or our services.
             </p>
           </section>
@@ -78,7 +78,7 @@ export default function TermsPage() {
               For questions regarding these terms, contact us at:
             </p>
             <address className="not-italic text-foreground/80">
-              <strong>Prime Associate LLC</strong><br />
+              <strong>Prime Associates LLC</strong><br />
               23160 Fashion Dr Ste 220<br />
               Estero, FL 33928<br />
               United States<br /><br />

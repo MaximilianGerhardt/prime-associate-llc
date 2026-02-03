@@ -6,11 +6,11 @@ import { cn } from '@/lib/utils'
 
 const faqs = [
   {
-    question: 'What is Prime Associate LLC?',
-    answer: 'Prime Associate LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
+    question: 'What is Prime Associates LLC?',
+    answer: 'Prime Associates LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
   },
   {
-    question: 'What types of businesses does Prime Associate work with?',
+    question: 'What types of businesses does Prime Associates work with?',
     answer: 'We exclusively partner with high-end AI ventures, digital businesses with proven scalability, and entrepreneurs who understand that time is the ultimate currency. We do not work with early-stage concepts or businesses that require extensive validation.',
   },
   {
@@ -18,7 +18,7 @@ const faqs = [
     answer: 'The Nexus Framework is our proprietary stability bedrock—a systematic approach that provides immovable foundation for rapid scaling. It ensures that acceleration does not compromise structural integrity.',
   },
   {
-    question: 'What investment range does Prime Associate consider?',
+    question: 'What investment range does Prime Associates consider?',
     answer: 'We operate exclusively in high-ticket engagements. Minimum partnership thresholds start at $500,000. This is non-negotiable and by design—it ensures alignment with partners who are serious about exponential growth.',
   },
   {
@@ -26,7 +26,7 @@ const faqs = [
     answer: 'Our qualification process is rigorous and by invitation. Submit your inquiry through our form. If there is alignment, our team will reach out within 48 hours. Not every submission proceeds—this selectivity is what ensures results.',
   },
   {
-    question: 'What makes Prime Associate different from traditional VCs?',
+    question: 'What makes Prime Associates different from traditional VCs?',
     answer: 'We are not a traditional VC. We are a catalyst. Traditional VCs provide capital and wait. We provide capital, infrastructure, AI systems, and direct execution support. Every second of engagement multiplies enterprise revenue.',
   },
 ]

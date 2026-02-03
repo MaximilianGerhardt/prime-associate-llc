@@ -1,5 +1,5 @@
 export const siteConfig = {
-  name: 'Prime Associate LLC',
+  name: 'Prime Associates LLC',
   description: 'The world\'s most exclusive investment business accelerator for the digital age. Global AI Business Accelerator, Tier-1 Digital Investment Catalyst, AI-Driven Revenue Scaling.',
   url: 'https://primeassociate.com',
   ogImage: 'https://primeassociate.com/og.jpg',
@@ -24,7 +24,7 @@ export function generateOrganizationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'Organization',
-    name: 'Prime Associate LLC',
+    name: 'Prime Associates LLC',
     url: siteConfig.url,
     logo: `${siteConfig.url}/logo.png`,
     description: siteConfig.description,
@@ -72,7 +72,7 @@ export function generateServiceSchema() {
     serviceType: 'Investment Business Acceleration',
     provider: {
       '@type': 'Organization',
-      name: 'Prime Associate LLC',
+      name: 'Prime Associates LLC',
     },
     description: 'Tier-1 digital investment catalyst providing AI-driven revenue scaling, autonomous sales systems, and exponential business acceleration for qualified ventures.',
     areaServed: {
@@ -119,15 +119,15 @@ export function generateFAQSchema() {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is Prime Associate LLC?',
+        name: 'What is Prime Associates LLC?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Prime Associate LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
+          text: 'Prime Associates LLC is a sovereign investment catalyst operating globally. We leverage our proprietary Nexus Framework to inject exponential Momentum into digital business models, focusing on high-end AI ventures, autonomous sales systems, and algorithmic revenue generation.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What types of businesses does Prime Associate work with?',
+        name: 'What types of businesses does Prime Associates work with?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We exclusively partner with high-end AI ventures, digital businesses with proven scalability, and entrepreneurs who understand that time is the ultimate currency. We do not work with early-stage concepts or businesses that require extensive validation.',
@@ -143,7 +143,7 @@ export function generateFAQSchema() {
       },
       {
         '@type': 'Question',
-        name: 'What investment range does Prime Associate consider?',
+        name: 'What investment range does Prime Associates consider?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We operate exclusively in high-ticket engagements. Minimum partnership thresholds start at $500,000. This is non-negotiable and by design—it ensures alignment with partners who are serious about exponential growth.',
@@ -159,7 +159,7 @@ export function generateFAQSchema() {
       },
       {
         '@type': 'Question',
-        name: 'What makes Prime Associate different from traditional VCs?',
+        name: 'What makes Prime Associates different from traditional VCs?',
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We are not a traditional VC. We are a catalyst. Traditional VCs provide capital and wait. We provide capital, infrastructure, AI systems, and direct execution support. Every second of engagement multiplies enterprise revenue.',

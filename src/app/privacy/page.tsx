@@ -2,7 +2,7 @@ import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Privacy Policy',
-  description: 'Privacy Policy for Prime Associate LLC - How we collect, use, and protect your information.',
+  description: 'Privacy Policy for Prime Associates LLC - How we collect, use, and protect your information.',
 }
 
 export default function PrivacyPage() {
@@ -61,7 +61,7 @@ export default function PrivacyPage() {
               For privacy-related inquiries, contact us at:
             </p>
             <address className="not-italic text-foreground/80">
-              <strong>Prime Associate LLC</strong><br />
+              <strong>Prime Associates LLC</strong><br />
               23160 Fashion Dr Ste 220<br />
               Estero, FL 33928<br />
               United States<br /><br />
