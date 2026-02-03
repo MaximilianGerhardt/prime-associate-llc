@@ -9,7 +9,10 @@ if (!connectionString) {
 }
 
 const client = connectionString 
-  ? postgres(connectionString, { prepare: false })
+  ? postgres(connectionString, { 
+      prepare: false,
+      ssl: 'require',
+    })
   : null
 
 export const db = client ? drizzle(client, { schema }) : null

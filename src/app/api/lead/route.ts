@@ -71,8 +71,9 @@ export async function POST(request: Request) {
     return NextResponse.json({ success: true, id: lead.id })
   } catch (error) {
     console.error('Lead submission error:', error)
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error'
     return NextResponse.json(
-      { error: 'Internal server error' },
+      { error: 'Internal server error', details: errorMessage },
       { status: 500 }
     )
   }
