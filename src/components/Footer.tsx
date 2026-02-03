@@ -32,6 +32,12 @@ export function Footer() {
               Capabilities
             </Link>
             <Link 
+              href="/newsletter" 
+              className="text-sm text-muted hover:text-foreground transition-colors"
+            >
+              Newsletter
+            </Link>
+            <Link 
               href="#apply" 
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
