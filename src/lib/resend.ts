@@ -1,6 +1,8 @@
 import { Resend } from 'resend'
 
-export const resend = new Resend(process.env.RESEND_API_KEY)
+const resendApiKey = process.env.RESEND_API_KEY
+
+export const resend = resendApiKey ? new Resend(resendApiKey) : null
 
 const ADMIN_EMAIL = 'info@p-a.llc'
 
@@ -49,6 +51,11 @@ export async function sendAdminNotification(data: {
     dateStyle: 'full',
     timeStyle: 'short',
   })
+
+  if (!resend) {
+    console.warn('Resend API key not configured, skipping email')
+    return { data: null, error: null }
+  }
 
   return resend.emails.send({
     from: 'Prime Associate <notifications@p-a.llc>',
@@ -161,6 +168,11 @@ export async function sendCustomerConfirmation(data: {
   company?: string
   investmentRange?: string
 }) {
+  if (!resend) {
+    console.warn('Resend API key not configured, skipping email')
+    return { data: null, error: null }
+  }
+
   return resend.emails.send({
     from: 'Prime Associate <hello@p-a.llc>',
     to: [data.email],
