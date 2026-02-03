@@ -51,13 +51,20 @@ export async function POST(request: Request) {
         name: data.name, 
         email: data.email, 
         company: data.company,
+        website: data.website,
+        revenue: data.revenue,
         investmentRange: data.investmentRange,
         message: data.message,
         phone: data.phone,
         callbackTime: data.callbackTime,
         timezone: data.timezone,
       }),
-      sendLeadConfirmation({ name: data.name, email: data.email }),
+      sendLeadConfirmation({ 
+        name: data.name, 
+        email: data.email,
+        company: data.company,
+        investmentRange: data.investmentRange,
+      }),
     ])
 
     return NextResponse.json({ success: true, id: lead.id })
