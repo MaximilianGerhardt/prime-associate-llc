@@ -58,7 +58,7 @@ export async function sendAdminNotification(data: {
   }
 
   return resend.emails.send({
-    from: 'Prime Associate <notifications@p-a.llc>',
+    from: 'Prime Associate <notifications@mail.p-a.llc>',
     to: [ADMIN_EMAIL],
     subject: `🔔 New Application: ${data.name} | ${data.company || 'Individual'} | ${data.investmentRange || 'Not specified'}`,
     html: `
@@ -174,7 +174,7 @@ export async function sendCustomerConfirmation(data: {
   }
 
   return resend.emails.send({
-    from: 'Prime Associate <hello@p-a.llc>',
+    from: 'Prime Associate <hello@mail.p-a.llc>',
     to: [data.email],
     replyTo: ADMIN_EMAIL,
     subject: 'Application Received - Prime Associate LLC',
