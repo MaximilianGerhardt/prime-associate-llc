@@ -73,8 +73,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" type="image/svg+xml" href="/icon.svg" />
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" sizes="any" />
         <meta name="theme-color" content="#0A0A0A" />
       </head>
       <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
