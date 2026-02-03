@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { db } from '@/db'
+import { getDb } from '@/db'
 import { leads } from '@/db/schema'
 import { sendLeadNotification, sendLeadConfirmation } from '@/lib/resend'
 import { z } from 'zod'
@@ -31,6 +31,7 @@ export async function POST(request: Request) {
 
     const data = result.data
 
+    const db = getDb()
     const [lead] = await db.insert(leads).values({
       name: data.name,
       email: data.email,

@@ -1,10 +1,11 @@
 import { NextResponse } from 'next/server'
-import { db } from '@/db'
+import { getDb } from '@/db'
 import { leads, leadNotes } from '@/db/schema'
 import { eq, desc } from 'drizzle-orm'
 
 export async function GET() {
   try {
+    const db = getDb()
     const allLeads = await db.select().from(leads).orderBy(desc(leads.createdAt))
     return NextResponse.json(allLeads)
   } catch (error) {
@@ -15,6 +16,7 @@ export async function GET() {
 
 export async function PATCH(request: Request) {
   try {
+    const db = getDb()
     const { id, status, priority, score } = await request.json()
     
     const [updated] = await db

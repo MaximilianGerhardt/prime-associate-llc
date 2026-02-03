@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server'
-import { db } from '@/db'
+import { getDb } from '@/db'
 import { leadNotes } from '@/db/schema'
 import { eq, desc } from 'drizzle-orm'
 
@@ -8,6 +8,7 @@ export async function GET(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const db = getDb()
     const { id } = await params
     const notes = await db
       .select()
@@ -27,6 +28,7 @@ export async function POST(
   { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    const db = getDb()
     const { id } = await params
     const { content, createdBy } = await request.json()
     
