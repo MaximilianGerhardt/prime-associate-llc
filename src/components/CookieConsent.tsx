@@ -123,19 +123,18 @@ export function CookieConsent() {
 
       {/* Settings Modal */}
       {showSettings && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70">
-          <div className="bg-secondary border border-muted/20 rounded-xl max-w-lg w-full max-h-[90vh] overflow-y-auto">
-            <div className="flex items-center justify-between p-6 border-b border-muted/20">
-              <div className="flex items-center gap-2">
-                <Settings className="w-5 h-5 text-accent" />
-                <h2 className="text-xl font-serif text-foreground">Cookie Settings</h2>
-              </div>
-              <button
-                onClick={() => setShowSettings(false)}
-                className="text-muted hover:text-foreground transition-colors"
-              >
-                <X className="w-5 h-5" />
-              </button>
+        <div className="fixed inset-0 z-50 flex items-start justify-center p-4 pt-16 bg-black/70 overflow-y-auto">
+          <div className="bg-secondary border border-muted/20 rounded-xl max-w-lg w-full my-4 relative">
+            <button
+              onClick={() => setShowSettings(false)}
+              className="absolute top-4 right-4 z-10 p-2 bg-secondary rounded-full text-muted hover:text-foreground transition-colors"
+              aria-label="Close"
+            >
+              <X className="w-6 h-6" />
+            </button>
+            <div className="flex items-center gap-2 p-6 border-b border-muted/20">
+              <Settings className="w-5 h-5 text-accent" />
+              <h2 className="text-xl font-serif text-foreground">Cookie Settings</h2>
             </div>
 
             <div className="p-6 space-y-6">

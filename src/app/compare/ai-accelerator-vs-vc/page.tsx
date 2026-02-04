@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { Check, X, Clock, DollarSign, Users, Zap, TrendingUp, Target } from 'lucide-react'
 import Link from 'next/link'
 
@@ -175,8 +173,6 @@ export default function AcceleratorVsVCPage() {
 
   return (
     <>
-      <Header />
-      <main className="min-h-screen bg-primary">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -381,8 +377,6 @@ export default function AcceleratorVsVCPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
     </>
   )
 }

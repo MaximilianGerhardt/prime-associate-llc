@@ -1,6 +1,4 @@
 import { Metadata } from 'next'
-import { Header } from '@/components/Header'
-import { Footer } from '@/components/Footer'
 import { Check, X, TrendingUp, Clock, DollarSign, Users, Zap, Calculator } from 'lucide-react'
 import Link from 'next/link'
 
@@ -158,8 +156,6 @@ export default function AIAutomationCostsPage() {
 
   return (
     <>
-      <Header />
-      <main className="min-h-screen bg-primary">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
@@ -487,8 +483,6 @@ export default function AIAutomationCostsPage() {
             </div>
           </div>
         </section>
-      </main>
-      <Footer />
     </>
   )
 }

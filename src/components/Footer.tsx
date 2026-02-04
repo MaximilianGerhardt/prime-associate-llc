@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { Linkedin } from 'lucide-react'
 import { CookieSettingsButton } from './CookieConsent'
 
 export function Footer() {
@@ -50,18 +49,6 @@ export function Footer() {
             >
               Apply
             </Link>
-          </div>
-
-          <div className="flex items-center gap-4">
-            <a 
-              href="https://linkedin.com/company/primeassociate" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-muted hover:text-accent transition-colors"
-              aria-label="Follow Prime Associates on LinkedIn"
-            >
-              <Linkedin className="w-5 h-5" />
-            </a>
           </div>
         </div>
 

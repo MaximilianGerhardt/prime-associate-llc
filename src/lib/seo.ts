@@ -4,7 +4,7 @@ export const siteConfig = {
   url: 'https://p-a.llc',
   ogImage: 'https://p-a.llc/og-image.png',
   links: {
-    linkedin: 'https://linkedin.com/company/primeassociate',
+    linkedin: 'https://linkedin.com/company/primeassociates',
   },
   keywords: [
     'Global AI Business Accelerator',
