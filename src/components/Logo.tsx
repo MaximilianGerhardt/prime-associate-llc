@@ -20,7 +20,7 @@ export function Logo({ className, size = 'md' }: LogoProps) {
         sizeClasses[size]
       )}>
         <span className="font-normal">Prime</span>
-        <span className="text-[#C9A962] font-medium ml-2">Associate</span>
+        <span className="text-[#C9A962] font-medium ml-2">Associates</span>
       </h1>
       <div className="flex items-center gap-3 mt-2">
         <div className="h-px w-8 bg-gradient-to-r from-transparent to-[#C9A962]/50" />

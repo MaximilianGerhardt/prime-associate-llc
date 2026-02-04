@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { useState, useEffect } from 'react'
 import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
+import { SmoothScrollLink } from './SmoothScrollLink'
 
 const navItems = [
   { label: 'Expertise', href: '/expertise' },
@@ -38,13 +39,23 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-sm text-muted hover:text-foreground transition-colors duration-300"
-            >
-              {item.label}
-            </Link>
+            item.href.includes('#') ? (
+              <SmoothScrollLink
+                key={item.href}
+                href={item.href}
+                className="text-sm text-muted hover:text-foreground transition-colors duration-300"
+              >
+                {item.label}
+              </SmoothScrollLink>
+            ) : (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-sm text-muted hover:text-foreground transition-colors duration-300"
+              >
+                {item.label}
+              </Link>
+            )
           ))}
         </div>
 
@@ -61,14 +72,25 @@ export function Header() {
         <div className="md:hidden bg-primary border-t border-muted/10">
           <div className="flex flex-col px-6 py-8 space-y-6">
             {navItems.map((item) => (
-              <Link
-                key={item.href}
-                href={item.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="text-lg text-muted hover:text-foreground transition-colors duration-300"
-              >
-                {item.label}
-              </Link>
+              item.href.includes('#') ? (
+                <SmoothScrollLink
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-lg text-muted hover:text-foreground transition-colors duration-300"
+                >
+                  {item.label}
+                </SmoothScrollLink>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className="text-lg text-muted hover:text-foreground transition-colors duration-300"
+                >
+                  {item.label}
+                </Link>
+              )
             ))}
           </div>
         </div>

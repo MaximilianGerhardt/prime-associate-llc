@@ -1,7 +1,7 @@
 import { ArrowDown, TrendingUp, Clock, Shield } from 'lucide-react'
-import Link from 'next/link'
 import Image from 'next/image'
 import { Logo } from './Logo'
+import { SmoothScrollLink } from './SmoothScrollLink'
 
 export function Hero() {
   return (
@@ -50,18 +50,18 @@ export function Hero() {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4">
-          <Link 
+          <SmoothScrollLink 
             href="#apply" 
             className="inline-flex items-center justify-center bg-[#C9A962] text-[#0A0A0A] px-8 py-4 font-medium hover:bg-[#C9A962]/90 transition-all duration-300"
           >
             Apply for Acceleration
-          </Link>
-          <Link 
+          </SmoothScrollLink>
+          <SmoothScrollLink 
             href="#benefits" 
             className="inline-flex items-center justify-center border border-[#333] text-[#FAFAFA] px-8 py-4 font-medium hover:border-[#C9A962] hover:text-[#C9A962] transition-all duration-300"
           >
             See What You Get
-          </Link>
+          </SmoothScrollLink>
         </div>
       </div>
 
