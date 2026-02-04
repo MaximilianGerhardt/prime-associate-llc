@@ -25,7 +25,7 @@ function UnsubscribeContent() {
         <div className="space-y-4">
           <p className="text-sm text-muted">
             Changed your mind?{' '}
-            <Link href="/newsletter" className="text-accent hover:underline">
+            <Link href="/newsletter" className="text-accent underline hover:no-underline">
               Subscribe again
             </Link>
           </p>
@@ -91,7 +91,7 @@ function UnsubscribeContent() {
       </h1>
       <p className="text-muted mb-8 max-w-md mx-auto">
         We couldn&apos;t process your unsubscribe request. Please try again or contact us at{' '}
-        <a href="mailto:info@p-a.llc" className="text-accent hover:underline">info@p-a.llc</a>
+        <a href="mailto:info@p-a.llc" className="text-accent underline hover:no-underline">info@p-a.llc</a>
       </p>
       <Link 
         href="/"

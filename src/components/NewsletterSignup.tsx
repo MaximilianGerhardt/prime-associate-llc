@@ -80,7 +80,7 @@ export function NewsletterSignup({ variant = 'card', source = 'website', classNa
             Didn&apos;t receive it? Check your spam folder or{' '}
             <button 
               onClick={() => setStatus('idle')} 
-              className="text-accent hover:underline"
+              className="text-accent underline hover:no-underline"
             >
               try again
             </button>
@@ -267,7 +267,7 @@ export function NewsletterSignup({ variant = 'card', source = 'website', classNa
           <span className="text-xs text-muted leading-relaxed">
             I agree to receive marketing emails from Prime Associates LLC. 
             You can unsubscribe at any time by clicking the link in our emails.{' '}
-            <a href="/privacy" className="text-accent hover:underline">Privacy Policy</a>
+            <a href="/privacy" className="text-accent underline hover:no-underline">Privacy Policy</a>
           </span>
         </label>
 
