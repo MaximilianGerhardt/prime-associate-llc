@@ -8,6 +8,24 @@ Nutze diesen Workflow beim Start eines neuen Next.js Projekts, um von Anfang an 
 
 ---
 
+## 0. Projekt-Abfrage (WICHTIG - zuerst klären!)
+
+Bevor du startest, kläre folgende Fragen mit dem User:
+
+1. **Zielmarkt:** EU (DSGVO streng) oder USA/International?
+2. **Server-Standort:** Europa oder Amerika? (Für DB und Hosting)
+3. **Hosting:** Vercel (empfohlen) oder Netlify?
+4. **Domain:** Wie lautet die Domain?
+5. **Analytics:** Google Analytics, Plausible, oder keine?
+6. **E-Mail-Provider:** Resend, SendGrid, oder andere?
+
+### Empfehlungen nach Markt:
+- **EU-Markt:** Server in Frankfurt/EU, DSGVO-konformer Cookie-Banner, Double-Opt-In für Newsletter
+- **US-Markt:** Server in US-East, CAN-SPAM compliant, Single-Opt-In erlaubt
+- **Beide:** Höchsten Standard (DSGVO) für rechtliche Sicherheit
+
+---
+
 ## 1. Projekt initialisieren
 
 ```bash
@@ -199,8 +217,131 @@ NEXT_PUBLIC_SUPABASE_ANON_KEY=
 SUPABASE_SERVICE_ROLE_KEY=
 ```
 
-## 9. Deployment (Netlify)
+## 9. Cookie-Consent / DSGVO (PFLICHT!)
 
+### Cookie-Consent-Komponente erstellen
+```typescript
+// src/components/CookieConsent.tsx
+'use client'
+import { useState, useEffect } from 'react'
+
+type ConsentSettings = {
+  necessary: boolean
+  analytics: boolean
+  marketing: boolean
+}
+
+export function CookieConsent() {
+  const [showBanner, setShowBanner] = useState(false)
+  const [consent, setConsent] = useState<ConsentSettings>({
+    necessary: true,
+    analytics: false,
+    marketing: false,
+  })
+
+  // Cookie lesen/schreiben, Banner anzeigen wenn keine Consent
+  // Consent speichern und Analytics/Marketing aktivieren wenn erlaubt
+  // Settings-Modal für granulare Kontrolle
+}
+```
+
+### Anforderungen DSGVO:
+- [ ] Banner beim ersten Besuch anzeigen
+- [ ] "Nur notwendige" und "Alle akzeptieren" Buttons
+- [ ] Einstellungen jederzeit änderbar (Link im Footer)
+- [ ] Consent vor Tracking-Skripten laden
+- [ ] Consent-Cookie speichern (1 Jahr)
+
+### In Layout einbinden:
+```typescript
+// layout.tsx
+import { CookieConsent } from '@/components/CookieConsent'
+
+<body>
+  {children}
+  <CookieConsent />
+</body>
+```
+
+### Footer: Cookie-Settings Link
+```typescript
+<CookieSettingsButton className="hover:text-foreground" />
+```
+
+---
+
+## 10. Schema.org / Strukturierte Daten
+
+### Organization Schema (layout.tsx oder page.tsx)
+```typescript
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Company Name',
+  url: 'https://domain.com',
+  logo: 'https://domain.com/logo.png',
+  sameAs: [
+    'https://linkedin.com/company/...',
+    'https://twitter.com/...',
+  ],
+  contactPoint: {
+    '@type': 'ContactPoint',
+    email: 'info@domain.com',
+    contactType: 'customer service',
+  },
+}
+
+// In <head> einfügen:
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+/>
+```
+
+### FAQ Schema (für FAQ-Seiten)
+```typescript
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: [
+    {
+      '@type': 'Question',
+      name: 'Question 1?',
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: 'Answer 1',
+      },
+    },
+    // ... weitere Fragen
+  ],
+}
+```
+
+### Weitere wichtige Schemas:
+- **LocalBusiness** - für lokale Unternehmen
+- **Product** - für Produkte/Services
+- **Article** - für Blog-Posts
+- **BreadcrumbList** - für Navigation
+
+---
+
+## 11. Deployment
+
+### Option A: Vercel (empfohlen)
+```bash
+npm i -g vercel
+vercel
+```
+
+1. GitHub Repo verbinden
+2. Framework: Next.js (auto-detected)
+3. Environment Variables setzen
+4. Region wählen:
+   - EU: `fra1` (Frankfurt)
+   - US: `iad1` (Washington DC)
+5. Auto-Deploy bei Push
+
+### Option B: Netlify
 1. GitHub Repo verbinden
 2. Build command: `npm run build`
 3. Publish directory: `.next`

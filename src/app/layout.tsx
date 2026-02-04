@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
 import "./globals.css";
 import { LayoutWrapper } from "@/components/LayoutWrapper";
+import { CookieConsent } from "@/components/CookieConsent";
 import { siteConfig } from "@/lib/seo";
 
 const inter = Inter({
@@ -79,6 +80,7 @@ export default function RootLayout({
       </head>
       <body className={`${inter.variable} ${cormorant.variable} antialiased`}>
         <LayoutWrapper>{children}</LayoutWrapper>
+        <CookieConsent />
       </body>
     </html>
   );

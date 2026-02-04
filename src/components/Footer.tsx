@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Linkedin } from 'lucide-react'
+import { CookieSettingsButton } from './CookieConsent'
 
 export function Footer() {
   return (
@@ -67,6 +68,7 @@ export function Footer() {
             <Link href="/terms" className="hover:text-foreground transition-colors">
               Terms of Service
             </Link>
+            <CookieSettingsButton className="hover:text-foreground transition-colors" />
           </div>
         </div>
       </div>
