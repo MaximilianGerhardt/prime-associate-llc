@@ -10,6 +10,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/expertise/revenue-systems', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/expertise/digital-dominance', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/resources/ai-automation-costs', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/resources/ai-implementation-guide', priority: 0.9, changeFrequency: 'monthly' as const },
+    { path: '/compare/ai-accelerator-vs-vc', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/industries/saas', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/industries/ecommerce', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/industries/agencies', priority: 0.8, changeFrequency: 'monthly' as const },

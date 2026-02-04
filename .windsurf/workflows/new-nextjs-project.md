@@ -350,6 +350,93 @@ vercel
 
 ---
 
+## 12. SEO-Content-Seiten (GEO-optimiert)
+
+Erstelle ausführliche Content-Seiten für organischen Traffic und AI-Suchen (GEO).
+
+### Seiten-Typen mit hohem SEO-Wert:
+
+**1. Pricing/Cost Guide** (`/resources/[topic]-costs`)
+- Echte Zahlen und Investment-Ranges
+- Cost-Breakdown (Wo geht das Geld hin?)
+- Industry Benchmarks Tabelle
+- ROI-Vergleich (z.B. AI vs Human)
+- 6-8 FAQs mit Schema
+
+**2. Industry Pages** (`/industries/[industry]`)
+- 4 Use Cases mit Metriken
+- Detaillierte Case Study (Before/After)
+- 5 branchenspezifische FAQs
+- ROI-Daten und Payback-Zeiten
+
+**3. Implementation Guide** (`/resources/[topic]-guide`)
+- Phasen-basierter Prozess
+- Timeline pro Scope
+- Common Pitfalls + Solutions
+- Success Factors
+- 6 FAQs
+
+**4. Comparison Pages** (`/compare/[option-a]-vs-[option-b]`)
+- Side-by-side Tabelle
+- Vorteile beider Optionen
+- "Best Fit" Entscheidungshilfe
+- 6 Vergleichs-FAQs
+
+### Seiten-Template Struktur:
+```tsx
+// Jede SEO-Seite sollte enthalten:
+
+// 1. Metadata mit Keywords
+export const metadata: Metadata = {
+  title: 'Keyword-Rich Title | Brand',
+  description: '155 chars mit Primary Keyword',
+  keywords: ['8-10 relevante Keywords'],
+  alternates: { canonical: '/path' },
+}
+
+// 2. FAQ Schema für Rich Snippets
+const faqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map(faq => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: { '@type': 'Answer', text: faq.answer },
+  })),
+}
+
+// 3. In <main> einfügen:
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+/>
+
+// 4. Sektionen:
+// - Hero mit Primary Keyword in H1
+// - Quick Answer Box (für Featured Snippets)
+// - Detailed Content mit H2s für Secondary Keywords
+// - Data Tables/Comparisons
+// - FAQs (6-8 pro Seite)
+// - CTA Section
+```
+
+### FAQ Best Practices:
+- Fragen wie echte Suchanfragen formulieren
+- "How much does X cost?" 
+- "What is the ROI of X?"
+- "How long does X take?"
+- Antworten mit Zahlen und Fakten
+- 100-200 Wörter pro Antwort
+
+### Internal Linking:
+- Jede Seite verlinkt zu:
+  - Pricing/Costs Seite
+  - Apply/Contact Form
+  - Related Industry Pages
+  - Calculator/Assessment Tools
+
+---
+
 ## Quick Reference Commands
 
 ```bash

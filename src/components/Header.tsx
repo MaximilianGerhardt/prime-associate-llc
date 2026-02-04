@@ -6,9 +6,9 @@ import { Menu, X } from 'lucide-react'
 import { cn } from '@/lib/utils'
 
 const navItems = [
-  { label: 'AI Acceleration', href: '/expertise/ai-acceleration' },
-  { label: 'Revenue Systems', href: '/expertise/revenue-systems' },
-  { label: 'Dominance', href: '/expertise/digital-dominance' },
+  { label: 'Expertise', href: '/expertise' },
+  { label: 'Industries', href: '/industries/saas' },
+  { label: 'Resources', href: '/resources/ai-automation-costs' },
   { label: 'Apply', href: '/#apply' },
 ]
 

@@ -19,18 +19,24 @@ export function Footer() {
             </p>
           </div>
 
-          <div className="flex items-center gap-8">
+          <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-2">
             <Link 
-              href="#benefits" 
+              href="/expertise" 
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
-              Benefits
+              Expertise
             </Link>
             <Link 
-              href="#capabilities" 
+              href="/industries/saas" 
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
-              Capabilities
+              Industries
+            </Link>
+            <Link 
+              href="/resources/ai-automation-costs" 
+              className="text-sm text-muted hover:text-foreground transition-colors"
+            >
+              Pricing
             </Link>
             <Link 
               href="/newsletter" 
@@ -39,7 +45,7 @@ export function Footer() {
               Newsletter
             </Link>
             <Link 
-              href="#apply" 
+              href="/#apply" 
               className="text-sm text-muted hover:text-foreground transition-colors"
             >
               Apply
