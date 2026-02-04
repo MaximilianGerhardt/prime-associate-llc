@@ -1,25 +1,30 @@
-import { Zap, Shield, TrendingUp, Bot } from 'lucide-react'
+import Link from 'next/link'
+import { Zap, Shield, TrendingUp, Bot, ArrowRight } from 'lucide-react'
 
 const services = [
   {
     icon: Shield,
     title: 'Nexus Framework',
     description: 'Proprietary stability bedrock. Immovable foundation for aggressive scaling without structural compromise.',
+    href: '/expertise',
   },
   {
     icon: Zap,
-    title: 'Momentum Injection',
-    description: 'Exponential velocity acceleration. We do not advise. We execute. Direct revenue multiplication.',
+    title: 'AI Acceleration',
+    description: 'Battle-tested AI systems that generate revenue from day one. No pilots. No experiments. Only results.',
+    href: '/expertise/ai-acceleration',
   },
   {
     icon: Bot,
-    title: 'Autonomous AI Systems',
-    description: 'AI-driven sales infrastructure that operates 24/7. Algorithmic revenue generation at scale.',
+    title: 'Revenue Systems',
+    description: 'Self-scaling revenue machines that work 24/7 without human bottlenecks. Algorithmic precision.',
+    href: '/expertise/revenue-systems',
   },
   {
     icon: TrendingUp,
-    title: 'Global Market Dominance',
-    description: 'Digital marketing architecture designed for international scale. No regional limitations.',
+    title: 'Digital Dominance',
+    description: 'Category creation, not market share. We engineer monopolies in the attention economy.',
+    href: '/expertise/digital-dominance',
   },
 ]
 
@@ -38,14 +43,20 @@ export function Services() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {services.map((service, index) => (
-            <div 
-              key={index} 
+            <Link 
+              key={index}
+              href={service.href}
               className="group p-8 border border-muted/20 hover:border-accent/50 transition-all duration-500"
             >
               <service.icon className="w-8 h-8 text-accent mb-6 group-hover:scale-110 transition-transform duration-300" />
-              <h3 className="font-serif text-xl text-foreground mb-3">{service.title}</h3>
-              <p className="text-muted leading-relaxed">{service.description}</p>
-            </div>
+              <h3 className="font-serif text-xl text-foreground mb-3 group-hover:text-accent transition-colors">
+                {service.title}
+              </h3>
+              <p className="text-muted leading-relaxed mb-4">{service.description}</p>
+              <span className="inline-flex items-center text-accent text-sm group-hover:gap-2 gap-1 transition-all">
+                Learn More <ArrowRight className="w-4 h-4" />
+              </span>
+            </Link>
           ))}
         </div>
       </div>

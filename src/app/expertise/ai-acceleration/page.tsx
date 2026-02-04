@@ -130,6 +130,46 @@ export default function AIAccelerationPage() {
           </Link>
         </div>
       </section>
+
+      <section className="py-16 px-6 md:px-12 lg:px-24 border-t border-muted/10">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-accent tracking-[0.3em] uppercase text-sm mb-8 text-center">
+            Explore More
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              href="/expertise/revenue-systems"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">Next Capability</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                Revenue Systems →
+              </h3>
+              <p className="text-muted text-sm mt-2">24/7 autonomous sales infrastructure</p>
+            </Link>
+            <Link 
+              href="/industries/saas"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">Industry Focus</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                AI for SaaS →
+              </h3>
+              <p className="text-muted text-sm mt-2">Reduce churn, scale revenue</p>
+            </Link>
+            <Link 
+              href="/resources/ai-automation-costs"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">Resources</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                AI Automation Costs →
+              </h3>
+              <p className="text-muted text-sm mt-2">Real pricing and ROI data</p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

@@ -155,6 +155,46 @@ export default function DigitalDominancePage() {
           </Link>
         </div>
       </section>
+
+      <section className="py-16 px-6 md:px-12 lg:px-24 border-t border-muted/10">
+        <div className="max-w-6xl mx-auto">
+          <p className="text-accent tracking-[0.3em] uppercase text-sm mb-8 text-center">
+            Explore More
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link 
+              href="/expertise/ai-acceleration"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">First Capability</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                AI Acceleration →
+              </h3>
+              <p className="text-muted text-sm mt-2">Battle-tested AI systems from day one</p>
+            </Link>
+            <Link 
+              href="/industries/agencies"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">Industry Focus</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                Agencies →
+              </h3>
+              <p className="text-muted text-sm mt-2">Scale without adding headcount</p>
+            </Link>
+            <Link 
+              href="/resources/ai-automation-costs"
+              className="group p-6 border border-muted/20 hover:border-accent/50 transition-colors"
+            >
+              <p className="text-xs text-accent uppercase tracking-wider mb-2">Resources</p>
+              <h3 className="font-serif text-lg text-foreground group-hover:text-accent transition-colors">
+                AI Automation Costs →
+              </h3>
+              <p className="text-muted text-sm mt-2">Real pricing and ROI data</p>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
