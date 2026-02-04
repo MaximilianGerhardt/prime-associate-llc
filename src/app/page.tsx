@@ -1,9 +1,11 @@
+import dynamic from "next/dynamic";
 import { Hero } from "@/components/Hero";
-import { Benefits } from "@/components/Benefits";
-import { Services } from "@/components/Services";
-import { Newsletter } from "@/components/Newsletter";
-import { FAQ } from "@/components/FAQ";
-import { Apply } from "@/components/Apply";
+
+const Benefits = dynamic(() => import("@/components/Benefits").then(mod => mod.Benefits));
+const Services = dynamic(() => import("@/components/Services").then(mod => mod.Services));
+const Newsletter = dynamic(() => import("@/components/Newsletter").then(mod => mod.Newsletter));
+const FAQ = dynamic(() => import("@/components/FAQ").then(mod => mod.FAQ));
+const Apply = dynamic(() => import("@/components/Apply").then(mod => mod.Apply));
 
 export default function Home() {
   return (

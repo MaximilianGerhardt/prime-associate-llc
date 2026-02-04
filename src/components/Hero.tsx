@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section className="min-h-screen flex flex-col justify-center items-center relative px-6 md:px-12 lg:px-24 overflow-hidden">
       <Image
-        src="https://tlrkqmxaivvormucqdhu.supabase.co/storage/v1/object/public/images/hero-skyline.jpg"
+        src="/images/hero-skyline.jpg"
         alt="Modern corporate skyline at night representing global business expansion and investment opportunities"
         fill
         priority

@@ -38,7 +38,7 @@ export function Benefits() {
   return (
     <section id="benefits" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
       <Image
-        src="https://tlrkqmxaivvormucqdhu.supabase.co/storage/v1/object/public/images/benefits-silk.jpg"
+        src="/images/benefits-silk.jpg"
         alt="Luxury silk fabric texture representing premium quality and refined business approach"
         fill
         quality={85}

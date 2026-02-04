@@ -5,7 +5,7 @@ export function Apply() {
   return (
     <section id="apply" className="py-24 md:py-32 px-6 md:px-12 lg:px-24 relative overflow-hidden">
       <Image
-        src="https://tlrkqmxaivvormucqdhu.supabase.co/storage/v1/object/public/images/apply-office.jpg"
+        src="/images/apply-office.jpg"
         alt="Executive office interior with golden ambient lighting symbolizing professional business environment"
         fill
         quality={85}
