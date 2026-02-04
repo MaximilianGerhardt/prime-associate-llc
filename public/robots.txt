@@ -1,0 +1,19 @@
+# Prime Associates LLC - robots.txt
+# https://p-a.llc
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://p-a.llc/sitemap.xml
+
+# Disallow internal/funnel pages from indexing
+Disallow: /api/
+Disallow: /newsletter/confirm
+Disallow: /newsletter/unsubscribe
+Disallow: /admin/
+
+# Allow newsletter landing pages (good for SEO)
+Allow: /newsletter/
+Allow: /newsletter/assessment
+Allow: /newsletter/calculator
