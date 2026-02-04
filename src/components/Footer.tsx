@@ -51,6 +51,7 @@ export function Footer() {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-muted hover:text-accent transition-colors"
+              aria-label="Follow Prime Associates on LinkedIn"
             >
               <Linkedin className="w-5 h-5" />
             </a>
